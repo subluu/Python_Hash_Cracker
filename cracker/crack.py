@@ -20,7 +20,7 @@ for pref in preferences:
     print(str(shout) + ". " + pref)
 
 #Recieving User Input
-preferance = input("\n[-] What preferance would you like to use? ")
+preferance = input("\n[+] What preferance would you like to use? ")
 print('\n')
 
 if preferance == "1":
@@ -28,7 +28,7 @@ if preferance == "1":
         time.sleep(.05)
         count += 1
         print(str(count) + ". " + algo)
-    response = input("\n[-] What hashing algorithm would you like to use? ")
+    response = input("\n[+] What hashing algorithm would you like to use? ")
     if response == "1":
         wordlist = input(r"[+] Please input the absolute path of the wordlist you would like to use.. ")
         hashfile = input(r"[+] Please input the absolute path of the hashfile you would like to use.. ")
