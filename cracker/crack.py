@@ -6,7 +6,7 @@ import hashlib
 count = 0
 shout = 0
 hashAlgos = ['md5', 'sha1', 'sha224', 'sha256', 'sha384', 'sha512']
-preferences = ['Your Own Wordlist', 'Default Wordlists']
+preferences = ['Your Own Wordlist']
 choices = ['1', '2', '3', '4', '5', '6']
 
 #Printing the Intro
