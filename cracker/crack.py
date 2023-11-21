@@ -30,8 +30,8 @@ if preferance == "1":
         print(str(count) + ". " + algo)
     response = input("\n[+] What hashing algorithm would you like to use? ")
     if response == "1":
-        wordlist = input(r"[+] Please input the absolute path of the wordlist you would like to use.. ")
-        hashfile = input(r"[+] Please input the absolute path of the hashfile you would like to use.. ")
+        wordlist = input(r"[+] Please input the wordlist you would like to use.. ")
+        hashfile = input(r"[+] Please input the hashfile you would like to use.. ")
         print("\n")
         with open(wordlist, 'r', errors="ignore") as words, open(hashfile, 'r', errors="ignore") as hashes:
             parse_lines = hashes.read().splitlines()
@@ -40,8 +40,8 @@ if preferance == "1":
                     if hashlib.md5(passwd.strip().encode()).hexdigest() == l:
                         print(f"[!]Password Found: {passwd}")
     elif response == "2":
-        wordlist = input(r"Please input the absolute path of the wordlist you would like to use.. ")
-        hashfile = input(r"Please input the absolute path of the hashfile you would like to use.. ")
+        wordlist = input(r"[+] Please input the wordlist you would like to use.. ")
+        hashfile = input(r"[+] Please input the hashfile you would like to use.. ")
         print("\n")
         with open(wordlist, 'r', errors="ignore") as words, open(hashfile, 'r', errors="ignore") as hashes:
             parse_lines = hashes.read().splitlines()
@@ -50,8 +50,8 @@ if preferance == "1":
                     if hashlib.sha1(passwd.strip().encode()).hexdigest() == l:
                         print(f"[!]Password Found: {passwd}")
     elif response == "3":
-        wordlist = input(r"Please input the absolute path of the wordlist you would like to use.. ")
-        hashfile = input(r"Please input the absolute path of the hashfile you would like to use.. ")
+        wordlist = input(r"[+] Please input the wordlist you would like to use.. ")
+        hashfile = input(r"[+] Please input the hashfile you would like to use.. ")
         print("\n")
         with open(wordlist, 'r', errors="ignore") as words, open(hashfile, 'r', errors="ignore") as hashes:
             parse_lines = hashes.read().splitlines()
@@ -60,8 +60,8 @@ if preferance == "1":
                     if hashlib.sha224(passwd.strip().encode()).hexdigest() == l:
                         print(f"[!]Password Found: {passwd}")
     elif response == "4":
-        wordlist = input(r"Please input the absolute path of the wordlist you would like to use.. ")
-        hashfile = input(r"Please input the absolute path of the hashfile you would like to use.. ")
+        wordlist = input(r"[+] Please input the wordlist you would like to use.. ")
+        hashfile = input(r"[+] Please input the hashfile you would like to use.. ")
         print("\n")
         with open(wordlist, 'r', errors="ignore") as words, open(hashfile, 'r', errors="ignore") as hashes:
             parse_lines = hashes.read().splitlines()
@@ -70,8 +70,8 @@ if preferance == "1":
                     if hashlib.sha256(passwd.strip().encode()).hexdigest() == l:
                         print(f"[!]Password Found: {passwd}")
     elif response == "5":
-        wordlist = input(r"Please input the absolute path of the wordlist you would like to use.. ")
-        hashfile = input(r"Please input the absolute path of the hashfile you would like to use.. ")
+        wordlist = input(r"[+] Please input the wordlist you would like to use.. ")
+        hashfile = input(r"[+] Please input the hashfile you would like to use.. ")
         print("\n")
         with open(wordlist, 'r', errors="ignore") as words, open(hashfile, 'r', errors="ignore") as hashes:
             parse_lines = hashes.read().splitlines()
@@ -80,8 +80,8 @@ if preferance == "1":
                     if hashlib.sha3_384(passwd.strip().encode()).hexdigest() == l:
                         print(f"[!]Password Found: {passwd}")
     elif response == "6":
-        wordlist = input(r"Please input the absolute path of the wordlist you would like to use.. ")
-        hashfile = input(r"Please input the absolute path of the hashfile you would like to use.. ")
+        wordlist = input(r"[+] Please input the wordlist you would like to use.. ")
+        hashfile = input(r"[+] Please input the hashfile you would like to use.. ")
         print("\n")
         with open(wordlist, 'r', errors="ignore") as words, open(hashfile, 'r', errors="ignore") as hashes:
             parse_lines = hashes.read().splitlines()
